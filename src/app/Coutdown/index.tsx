@@ -12,14 +12,14 @@ export const Countdown: React.FC = () => {
 				background: '#323232',
 				color: '#cccccc',
 				borderRadius: '10px',
-				height: '100px',
-				width: '60px',
-				fontSize: '70px',
+				height: '60px',
+				width: '40px',
+				fontSize: '40px',
 			}}
 			duration={0.8}
 			labelStyle={{
 				color: '#000000',
-				fontSize: '20px',
+				fontSize: '14px',
 				fontFamily: 'var(--font-geist-sans)',
 			}}
 			separatorStyle={{
