@@ -34,7 +34,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<Head>
 				<link
-					href='https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap'
+					href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;900&display=swap'
 					rel='stylesheet'
 				/>
 			</Head>
