@@ -1,5 +1,6 @@
 'use client';
 
+import { SocialIcon } from 'react-social-icons';
 import { Countdown } from './Coutdown';
 
 export default function CommingSoon() {
@@ -23,22 +24,19 @@ export default function CommingSoon() {
 					<p className='text-2xl text-gray-900 absolute top-4 left-8 font-medium'>
 						<img src='/assets/images/logo.svg' alt='' className='w-32 h-32' />
 					</p>
-					<div className='absolute md:hidden bottom-6 left-0 right-0 z-50 flex justify-center '>
-						<div className='flex gap-4 bg-[#ccd7de] p-2 rounded'>
-							<img
-								src='https://static.wixstatic.com/media/11062b_47c9543e20c94b7ca5c97e361e1b2db3~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_47c9543e20c94b7ca5c97e361e1b2db3~mv2.png'
-								alt=''
-								className='w-6 h-6'
+					<div className='absolute md:hidden bottom-0 left-0 right-0 z-50 flex justify-center '>
+						<div className='flex gap-2 bg-transparent p-2 rounded'>
+							<SocialIcon
+								url='https://www.instagram.com/'
+								bgColor='transparent'
 							/>
-							<img
-								src='https://static.wixstatic.com/media/11062b_ca1d837ce7194421b781ee7384061a8e~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_ca1d837ce7194421b781ee7384061a8e~mv2.png'
-								alt=''
-								className='w-6 h-6'
+							<SocialIcon
+								url='https://www.whatsapp.com/'
+								bgColor='transparent'
 							/>
-							<img
-								src='https://static.wixstatic.com/media/11062b_362ef89dec51403eb0ee59a21bde967c~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_362ef89dec51403eb0ee59a21bde967c~mv2.png'
-								alt=''
-								className='w-6 h-6'
+							<SocialIcon
+								url='https://www.facebook.com/'
+								bgColor='transparent'
 							/>
 						</div>
 					</div>
@@ -61,13 +59,21 @@ export default function CommingSoon() {
 						className='w-6 h-6'
 					/>
 				</div>
-
 				<div className='relative w-full lg:w-1/2 bg-[#eeeded] min-h-screen p-4 md:p-8 flex flex-col justify-center items-center gap-4 md:gap-8 max-md:pb-20 pt-10'>
-					<h2 className='text-6xl md:text-8xl text-black w-full text-center bonheur-royale-regular'>
-						Coming Soon
-					</h2>
+					<div className='flex flex-col items-center gap-6 md:gap-8'>
+						<h2 className='text-6xl md:text-8xl text-black w-full text-center bonheur-royale-regular'>
+							Coming Soon
+						</h2>
 
-					<div className='flex flex-col items-center  md:justify-center md:flex-row gap-5 md:max-w-4xl w-full md:p-5 pb-8'>
+						<p className='text-xl font-playfair-display font-extralight text-black w-full text-center'>
+							Our women&apos;s collection brings you beautiful designs inspired
+							by tradition but made for today. Stay tuned for something special!
+						</p>
+
+						<Countdown />
+					</div>
+
+					<div className='flex flex-col items-center  md:justify-center md:flex-row gap-5 md:max-w-4xl w-full md:p-5 pb-4'>
 						<div className='max-sm:flex max-sm:justify-start max-sm:w-full mt-4 md:mt-8 p-2'>
 							<img
 								src='https://image.wedmegood.com/resized-nw/1300X/wp-content/uploads/2021/09/82563800_469180497323493_9142563483056961770_n1.jpg'
@@ -83,10 +89,15 @@ export default function CommingSoon() {
 							/>
 						</div>
 					</div>
-
-					<Countdown />
 				</div>
 			</div>
+
+			<footer className='w-full bg-[#f2fbbc] p-4 flex flex-col items-center justify-center'>
+				<p className='text-gray-900 text-lg mb-2'>Follow us on social media</p>
+				<p className='text-sm text-gray-700'>
+					&copy; 2024 Rajasthani Fashion. All rights reserved.
+				</p>
+			</footer>
 		</>
 	);
 }

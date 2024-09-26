@@ -4,7 +4,7 @@ import '@leenguyen/react-flip-clock-countdown/dist/index.css';
 import React, { useEffect, useState } from 'react';
 
 export const Countdown: React.FC = () => {
-	const targetDate = new Date('2024-09-27T00:00:00').getTime();
+	const targetDate = new Date('2024-10-29T00:00:00').getTime();
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -12,7 +12,7 @@ export const Countdown: React.FC = () => {
 			setIsMobile(window.innerWidth < 500);
 		};
 
-		handleResize(); // Check initial width
+		handleResize();
 		window.addEventListener('resize', handleResize);
 
 		return () => {

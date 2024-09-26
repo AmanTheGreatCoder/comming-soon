@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 
 :root {
 	--background: #ffffff;
@@ -33,4 +34,8 @@ body {
 
 .font-playfair-display {
 	font-family: 'Playfair Display';
+}
+
+.font-fraunces {
+	font-family: 'Fraunces';
 }

@@ -32,12 +32,6 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<Head>
-				<link
-					href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;900&display=swap'
-					rel='stylesheet'
-				/>
-			</Head>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} ${bonheurRoyale.variable} antialiased`}
 			>
