@@ -1,101 +1,55 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+import { Countdown } from './Coutdown';
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+export default function CommingSoon() {
+	const targetDate = new Date('2024-10-10T23:59:59').getTime();
+
+	return (
+		<div className='flex flex-col md:flex-row w-full min-h-screen'>
+			<div className='hidden md:block relative w-full md:w-1/2 h-auto'>
+				<img
+					src={
+						'https://image.wedmegood.com/resized-nw/1300X/wp-content/uploads/2021/09/49993871_236305853959039_652836270.jpg'
+					}
+					alt='img'
+					className='w-full h-auto object-cover'
+					style={{ maxHeight: '100vh' }}
+				/>
+				<p className='text-2xl text-gray-900 absolute top-4 left-8 font-medium'>
+					<img src='/assets/images/logo.svg' alt='' className='w-32 h-32' />
+				</p>
+			</div>
+
+			{/* Right side - Countdown */}
+			<div className='relative w-full md:w-1/2 bg-[#eeeded] h-screen md:h-auto p-8 flex flex-col justify-center'>
+				<div className='flex flex-col items-center justify-center h-full gap-8'>
+					<h2 className='text-8xl text-black w-full text-center bonheur-royale-regular'>
+						Coming Soon
+					</h2>
+
+					<div className='flex justify-center items-center bg-transparent'>
+						<div className='flex gap-5 max-w-4xl w-full p-5'>
+							<div className='mt-8 p-2'>
+								<img
+									src='https://image.wedmegood.com/resized-nw/1300X/wp-content/uploads/2021/09/82563800_469180497323493_9142563483056961770_n1.jpg'
+									alt=''
+									className='w-72 h-80 object-cover'
+								/>
+							</div>
+							<div className='flex-[1.2] p-2'>
+								<img
+									src='https://image.wedmegood.com/resized-nw/1300X/wp-content/uploads/2021/09/163285971_293982685477412_4816726329.jpg'
+									alt=''
+									className='w-72 h-80 object-cover'
+								/>
+							</div>
+						</div>
+					</div>
+
+					<Countdown />
+				</div>
+			</div>
+		</div>
+	);
 }
