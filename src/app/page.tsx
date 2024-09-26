@@ -43,7 +43,10 @@ export default function CommingSoon() {
 				</div>
 
 				<div className='hidden lg:flex absolute top-0 bottom-0 left-4 z-50 flex-col justify-center gap-4'>
-					<img
+					<SocialIcon url='https://www.instagram.com/' bgColor='transparent' />
+					<SocialIcon url='https://www.whatsapp.com/' bgColor='transparent' />
+					<SocialIcon url='https://www.facebook.com/' bgColor='transparent' />
+					{/* <img
 						src='https://static.wixstatic.com/media/11062b_47c9543e20c94b7ca5c97e361e1b2db3~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_47c9543e20c94b7ca5c97e361e1b2db3~mv2.png'
 						alt=''
 						className='w-6 h-6'
@@ -57,7 +60,7 @@ export default function CommingSoon() {
 						src='https://static.wixstatic.com/media/11062b_362ef89dec51403eb0ee59a21bde967c~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_362ef89dec51403eb0ee59a21bde967c~mv2.png'
 						alt=''
 						className='w-6 h-6'
-					/>
+					/> */}
 				</div>
 				<div className='relative w-full lg:w-1/2 bg-[#eeeded] min-h-screen p-4 md:p-8 flex flex-col justify-center items-center gap-4 md:gap-8 max-md:pb-20 pt-10'>
 					<div className='flex flex-col items-center gap-6 md:gap-8'>
@@ -92,10 +95,9 @@ export default function CommingSoon() {
 				</div>
 			</div>
 
-			<footer className='w-full bg-[#f2fbbc] p-4 flex flex-col items-center justify-center'>
-				<p className='text-gray-900 text-lg mb-2'>Follow us on social media</p>
+			<footer className='w-full bg-neutral-200 p-4 flex flex-col items-center justify-center'>
 				<p className='text-sm text-gray-700'>
-					&copy; 2024 Rajasthani Fashion. All rights reserved.
+					&copy; 2024 Rang e Vastra. All rights reserved.
 				</p>
 			</footer>
 		</>
