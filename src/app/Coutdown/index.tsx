@@ -1,10 +1,9 @@
 'use client';
 import FlipClockCountdown from '@leenguyen/react-flip-clock-countdown';
 import '@leenguyen/react-flip-clock-countdown/dist/index.css';
-import React, { useRef } from 'react';
+import React from 'react';
 
 export const Countdown: React.FC = () => {
-	const clockRef = useRef<any>(null);
 	const targetDate = new Date('2024-09-27T00:00:00').getTime();
 
 	return (
@@ -22,6 +21,10 @@ export const Countdown: React.FC = () => {
 				color: '#000000',
 				fontSize: '20px',
 				fontFamily: 'var(--font-geist-sans)',
+			}}
+			separatorStyle={{
+				color: '#323232',
+				size: '8px',
 			}}
 			to={targetDate}
 		/>
