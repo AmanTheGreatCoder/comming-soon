@@ -60,11 +60,11 @@ export default function CommingSoon() {
 					<div className='absolute md:hidden bottom-0 left-0 right-0 z-50 flex justify-center '>
 						<div className='flex gap-2 bg-transparent p-2 rounded'>
 							<SocialIcon
-								url='https://www.instagram.com/'
+								url='https://www.instagram.com/range.vastra'
 								bgColor='transparent'
 							/>
 							<SocialIcon
-								url='https://www.whatsapp.com/'
+								url='https://wa.me/+917383518744'
 								bgColor='transparent'
 							/>
 							<SocialIcon
@@ -76,8 +76,11 @@ export default function CommingSoon() {
 				</div>
 
 				<div className='hidden lg:flex absolute top-0 bottom-0 left-4 z-50 flex-col justify-center gap-4'>
-					<SocialIcon url='https://www.instagram.com/' bgColor='transparent' />
-					<SocialIcon url='https://www.whatsapp.com/' bgColor='transparent' />
+					<SocialIcon
+						url='https://www.instagram.com/range.vastra'
+						bgColor='transparent'
+					/>
+					<SocialIcon url='https://wa.me/+917383518744' bgColor='transparent' />
 					<SocialIcon url='https://www.facebook.com/' bgColor='transparent' />
 				</div>
 				<div className='relative w-full lg:w-1/2 bg-[#eeeded] min-h-screen p-4 md:p-8 flex flex-col justify-center items-center gap-4 md:gap-8 max-md:pb-20 pt-10'>
@@ -106,7 +109,7 @@ export default function CommingSoon() {
 							<img
 								src='https://ambraee.com/cdn/shop/files/JBL00279.jpg?v=1721034792&width=1800'
 								alt=''
-								className='w-52 h-64 md:w-72 md:h-80 object-cover'
+								className='w-52 h-64 max-sm:mt-4 md:w-72 md:h-80 object-cover'
 							/>
 						</div>
 					</div>
