@@ -65,6 +65,7 @@ export default function CommingSoon() {
 							/>
 							<SocialIcon
 								url='https://wa.me/+917383518744'
+								network='whatsapp'
 								bgColor='transparent'
 							/>
 							<SocialIcon
