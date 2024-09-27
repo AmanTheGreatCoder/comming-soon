@@ -1,27 +1,61 @@
 'use client';
-
 import { SocialIcon } from 'react-social-icons';
 import { Countdown } from './Coutdown';
+import { useEffect, useRef, useState } from 'react';
 
 export default function CommingSoon() {
+	const [isSticky, setIsSticky] = useState(false);
+	const stickyRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (stickyRef.current) {
+				const rect = stickyRef.current.getBoundingClientRect();
+				const scrollTop =
+					window.pageYOffset || document.documentElement.scrollTop;
+
+				if (scrollTop > 0 && rect.top <= 0) {
+					setIsSticky(true);
+				} else {
+					setIsSticky(false);
+				}
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+
 	return (
 		<>
-			<div className='sticky shadow-md top-0 left-0 right-0 w-full h-11 flex justify-center z-[9999] items-center bg-[#f2fbbc]'>
+			<div
+				ref={stickyRef}
+				className={`transition-all duration-300 ease-in-out justify-center items-center ${
+					isSticky
+						? 'fixed shadow-md top-0 left-0 right-0 w-full h-11 flex z-[9999] items-center bg-[#f2fbbc] animate-slideDown'
+						: 'relative w-full h-11 flex bg-[#f2fbbc]'
+				}`}
+			>
 				<p className='text-base font-playfair-display font-extralight text-black w-full text-center'>
 					Something great is on the way
 				</p>
 			</div>
-			<div className='relative flex flex-col lg:flex-row w-full min-h-screen'>
-				<div className='md:block relative w-full lg:w-1/2 min-h-screen'>
+
+			<div
+				className={`relative flex flex-col lg:flex-row w-full min-h-screen ${
+					isSticky ? 'mt-11' : ''
+				}`}
+			>
+				<div className='md:block relative w-full lg:w-1/2 md:min-h-screen'>
 					<img
-						src={
-							'https://ambraee.com/cdn/shop/files/JBL00251.jpg?v=1721036560&width=1800'
-						}
+						src={'https://ambraee.com/cdn/shop/files/JBL00251.jpg'}
 						alt='img'
-						className='w-full max-sm:min-h-screen object-cover'
+						className='w-full md:min-h-screen object-cover'
 					/>
-					<p className='text-2xl text-gray-900 absolute top-4 left-8 font-medium'>
-						<img src='/assets/images/logo.svg' alt='' className='w-32 h-32' />
+					<p className='text-2xl text-gray-900 absolute top-[-30px] left-1 font-medium'>
+						<img src='/assets/images/logo.svg' alt='' className='w-28 h-28' />
 					</p>
 					<div className='absolute md:hidden bottom-0 left-0 right-0 z-50 flex justify-center '>
 						<div className='flex gap-2 bg-transparent p-2 rounded'>
