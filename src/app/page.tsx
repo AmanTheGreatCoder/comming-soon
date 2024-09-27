@@ -12,14 +12,13 @@ export default function CommingSoon() {
 				</p>
 			</div>
 			<div className='relative flex flex-col lg:flex-row w-full min-h-screen'>
-				<div className='md:block relative w-full lg:w-1/2 h-auto md:h-screen'>
+				<div className='md:block relative w-full lg:w-1/2 min-h-screen'>
 					<img
 						src={
-							'https://image.wedmegood.com/resized-nw/1300X/wp-content/uploads/2021/09/49993871_236305853959039_652836270.jpg'
+							'https://ambraee.com/cdn/shop/files/JBL00251.jpg?v=1721036560&width=1800'
 						}
 						alt='img'
-						className='w-full h-auto object-cover'
-						style={{ maxHeight: '100vh' }}
+						className='w-full max-sm:min-h-screen object-cover'
 					/>
 					<p className='text-2xl text-gray-900 absolute top-4 left-8 font-medium'>
 						<img src='/assets/images/logo.svg' alt='' className='w-32 h-32' />
@@ -46,21 +45,6 @@ export default function CommingSoon() {
 					<SocialIcon url='https://www.instagram.com/' bgColor='transparent' />
 					<SocialIcon url='https://www.whatsapp.com/' bgColor='transparent' />
 					<SocialIcon url='https://www.facebook.com/' bgColor='transparent' />
-					{/* <img
-						src='https://static.wixstatic.com/media/11062b_47c9543e20c94b7ca5c97e361e1b2db3~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_47c9543e20c94b7ca5c97e361e1b2db3~mv2.png'
-						alt=''
-						className='w-6 h-6'
-					/>
-					<img
-						src='https://static.wixstatic.com/media/11062b_ca1d837ce7194421b781ee7384061a8e~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_ca1d837ce7194421b781ee7384061a8e~mv2.png'
-						alt=''
-						className='w-6 h-6'
-					/>
-					<img
-						src='https://static.wixstatic.com/media/11062b_362ef89dec51403eb0ee59a21bde967c~mv2.png/v1/fill/w_24,h_24,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/11062b_362ef89dec51403eb0ee59a21bde967c~mv2.png'
-						alt=''
-						className='w-6 h-6'
-					/> */}
 				</div>
 				<div className='relative w-full lg:w-1/2 bg-[#eeeded] min-h-screen p-4 md:p-8 flex flex-col justify-center items-center gap-4 md:gap-8 max-md:pb-20 pt-10'>
 					<div className='flex flex-col items-center gap-6 md:gap-8'>
@@ -77,16 +61,16 @@ export default function CommingSoon() {
 					</div>
 
 					<div className='flex flex-col items-center  md:justify-center md:flex-row gap-5 md:max-w-4xl w-full md:p-5 pb-4'>
-						<div className='max-sm:flex max-sm:justify-start max-sm:w-full mt-4 md:mt-8 p-2'>
+						<div className='max-sm:flex max-md:justify-start max-md:w-full mt-4 md:mt-8 top-6 p-2 relative'>
 							<img
-								src='https://image.wedmegood.com/resized-nw/1300X/wp-content/uploads/2021/09/82563800_469180497323493_9142563483056961770_n1.jpg'
+								src='https://ambraee.com/cdn/shop/files/JBL00765.jpg?v=1721034145&width=1800'
 								alt=''
 								className='w-52 h-64 md:w-72 md:h-80 object-cover'
 							/>
 						</div>
-						<div className='p-2 max-sm:flex max-sm:justify-end relative max-sm:w-full'>
+						<div className='p-2 max-md:flex max-md:justify-end relative max-md:w-full'>
 							<img
-								src='https://image.wedmegood.com/resized-nw/1300X/wp-content/uploads/2021/09/163285971_293982685477412_4816726329.jpg'
+								src='https://ambraee.com/cdn/shop/files/JBL00279.jpg?v=1721034792&width=1800'
 								alt=''
 								className='w-52 h-64 md:w-72 md:h-80 object-cover'
 							/>
